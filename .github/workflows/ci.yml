@@ -1,6 +1,6 @@
 # .github/workflows/ci.yml
 
-name: Gemini CLI CI
+name: Torch Pilot CI
 
 on:
   push:

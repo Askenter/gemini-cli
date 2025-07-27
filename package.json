@@ -1,5 +1,5 @@
 {
-  "name": "@google/gemini-cli",
+  "name": "@google/torch-pilot",
   "version": "0.1.13",
   "engines": {
     "node": ">=20.0.0"
@@ -11,10 +11,10 @@
   "private": "true",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/google-gemini/gemini-cli.git"
+    "url": "git+https://github.com/google-gemini/torch-pilot.git"
   },
   "config": {
-    "sandboxImageUri": "us-docker.pkg.dev/gemini-code-dev/gemini-cli/sandbox:0.1.13"
+    "sandboxImageUri": "us-docker.pkg.dev/gemini-code-dev/torch-pilot/sandbox:0.1.13"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -50,7 +50,7 @@
     "clean": "node scripts/clean.js"
   },
   "bin": {
-    "gemini": "bundle/gemini.js"
+    "torch-pilot": "bundle/torch-pilot.js"
   },
   "files": [
     "bundle/",

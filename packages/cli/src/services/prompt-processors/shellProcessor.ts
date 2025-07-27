@@ -7,7 +7,7 @@
 import {
   checkCommandPermissions,
   ShellExecutionService,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 
 import { CommandContext } from '../../ui/commands/types.js';
 import { IPromptProcessor } from './types.js';

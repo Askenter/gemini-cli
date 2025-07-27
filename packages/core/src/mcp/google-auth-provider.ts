@@ -20,7 +20,7 @@ export class GoogleCredentialProvider implements OAuthClientProvider {
   // Properties required by OAuthClientProvider, with no-op values
   readonly redirectUrl = '';
   readonly clientMetadata: OAuthClientMetadata = {
-    client_name: 'Gemini CLI (Google ADC)',
+            client_name: 'Torch Pilot (Google ADC)',
     redirect_uris: [],
     grant_types: [],
     response_types: [],

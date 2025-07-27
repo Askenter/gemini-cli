@@ -12,7 +12,7 @@ import {
   getErrorMessage,
   isNodeError,
   unescapePath,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import {
   HistoryItem,
   IndividualToolCallDisplay,

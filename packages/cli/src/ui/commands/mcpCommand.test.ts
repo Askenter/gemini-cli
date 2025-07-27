@@ -13,7 +13,7 @@ import {
   getMCPServerStatus,
   getMCPDiscoveryState,
   DiscoveredMCPTool,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import open from 'open';
 import { MessageActionReturn } from './types.js';
 import { Type, CallableTool } from '@google/genai';
@@ -23,9 +23,9 @@ vi.mock('open', () => ({
   default: vi.fn(),
 }));
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@google/torch-pilot-core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@google/torch-pilot-core')>();
   return {
     ...actual,
     getMCPServerStatus: vi.fn(),
@@ -905,7 +905,7 @@ describe('mcpCommand', () => {
         },
       });
 
-      const { MCPOAuthProvider } = await import('@google/gemini-cli-core');
+      const { MCPOAuthProvider } = await import('@google/torch-pilot-core');
 
       const authCommand = mcpCommand.subCommands?.find(
         (cmd) => cmd.name === 'auth',
@@ -940,7 +940,7 @@ describe('mcpCommand', () => {
         },
       });
 
-      const { MCPOAuthProvider } = await import('@google/gemini-cli-core');
+      const { MCPOAuthProvider } = await import('@google/torch-pilot-core');
       (
         MCPOAuthProvider.authenticate as ReturnType<typeof vi.fn>
       ).mockRejectedValue(new Error('Auth failed'));

@@ -11,7 +11,7 @@ import {
   ToolRegistry,
   shutdownTelemetry,
   isTelemetrySdkInitialized,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import {
   Content,
   Part,

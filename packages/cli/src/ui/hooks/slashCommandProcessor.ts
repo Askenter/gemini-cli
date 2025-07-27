@@ -14,7 +14,7 @@ import {
   GitService,
   Logger,
   ToolConfirmationOutcome,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import { useSessionStats } from '../contexts/SessionContext.js';
 import {
   Message,

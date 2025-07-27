@@ -239,7 +239,7 @@ export class IDEServer {
 const createMcpServer = () => {
   const server = new McpServer(
     {
-      name: 'gemini-cli-companion-mcp-server',
+      				name: 'torch-pilot-companion-mcp-server',
       version: '1.0.0',
     },
     { capabilities: { logging: {} } },

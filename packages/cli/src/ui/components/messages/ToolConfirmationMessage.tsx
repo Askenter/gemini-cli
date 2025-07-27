@@ -14,7 +14,7 @@ import {
   ToolExecuteConfirmationDetails,
   ToolMcpConfirmationDetails,
   Config,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import {
   RadioButtonSelect,
   RadioSelectItem,

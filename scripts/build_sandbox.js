@@ -92,13 +92,13 @@ execSync(
   },
 );
 
-console.log('packing @google/gemini-cli-core ...');
+console.log('packing @google/torch-pilot-core ...');
 const corePackageDir = join('packages', 'core');
 rmSync(join(corePackageDir, 'dist', 'google-gemini-cli-core-*.tgz'), {
   force: true,
 });
 execSync(
-  `npm pack -w @google/gemini-cli-core --pack-destination ./packages/core/dist`,
+  `npm pack -w @google/torch-pilot-core --pack-destination ./packages/core/dist`,
   { stdio: 'ignore' },
 );
 

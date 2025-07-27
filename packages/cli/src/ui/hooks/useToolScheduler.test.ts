@@ -25,7 +25,7 @@ import {
   Status as ToolCallStatusType,
   ApprovalMode,
   Icon,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import {
   HistoryItemWithoutId,
   ToolCallStatus,
@@ -33,8 +33,8 @@ import {
 } from '../types.js';
 
 // Mocks
-vi.mock('@google/gemini-cli-core', async () => {
-  const actual = await vi.importActual('@google/gemini-cli-core');
+vi.mock('@google/torch-pilot-core', async () => {
+  const actual = await vi.importActual('@google/torch-pilot-core');
   return {
     ...actual,
     ToolRegistry: vi.fn(),

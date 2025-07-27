@@ -5,7 +5,7 @@
  */
 
 import { Box, Text } from 'ink';
-import { type OpenFiles } from '@google/gemini-cli-core';
+import { type OpenFiles } from '@google/torch-pilot-core';
 import { Colors } from '../colors.js';
 import path from 'node:path';
 

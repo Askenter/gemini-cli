@@ -14,11 +14,11 @@ import {
   getErrorMessage,
   loadServerHierarchicalMemory,
   type FileDiscoveryService,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@google/torch-pilot-core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@google/torch-pilot-core')>();
   return {
     ...original,
     getErrorMessage: vi.fn((error: unknown) => {

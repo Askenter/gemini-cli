@@ -7,7 +7,7 @@
 import { render } from 'ink-testing-library';
 import { InputPrompt, InputPromptProps } from './InputPrompt.js';
 import type { TextBuffer } from './shared/text-buffer.js';
-import { Config } from '@google/gemini-cli-core';
+import { Config } from '@google/torch-pilot-core';
 import * as path from 'path';
 import {
   CommandContext,

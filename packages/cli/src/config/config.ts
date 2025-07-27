@@ -20,7 +20,7 @@ import {
   TelemetryTarget,
   FileFilteringOptions,
   IdeClient,
-} from '@google/gemini-cli-core';
+} from '@google/torch-pilot-core';
 import { Settings } from './settings.js';
 
 import { Extension, annotateActiveExtensions } from './extension.js';
@@ -68,7 +68,7 @@ export async function parseArguments(): Promise<CliArgs> {
     .scriptName('gemini')
     .usage(
       '$0 [options]',
-      'Gemini CLI - Launch an interactive CLI, use -p/--prompt for non-interactive mode',
+      'Torch Pilot - Launch an interactive CLI, use -p/--prompt for non-interactive mode',
     )
     .option('model', {
       alias: 'm',

@@ -5,7 +5,7 @@
  */
 
 import { Message, MessageType } from '../types.js';
-import { Config } from '@google/gemini-cli-core';
+import { Config } from '@google/torch-pilot-core';
 import { LoadedSettings } from '../../config/settings.js';
 
 export function createShowMemoryAction(
